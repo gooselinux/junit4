@@ -30,7 +30,7 @@
 
 Name:           junit4
 Version:        4.5
-Release:        5.3%{?dist}
+Release:        5.3%{?dist}.goose.2
 Epoch:          0
 Summary:        Java regression test package
 License:        CPL
@@ -148,6 +148,12 @@ rm -rf $RPM_BUILD_ROOT
 %doc junit%{version}/doc/*
 
 %changelog
+* Tue Jan 3 2012 Clint Savage <herlo@gooseproject.org> 0:4.5-5.3.goose.2
+- GoOSe Koji rebuild
+
+* Sun Jan 1 2012 Clint Savage <herlo@gooseproject.org> 0:4.5-5.3.goose.1
+- Mock build for circular dependency
+
 * Thu Jan 7 2010 Alexander Kurtakov <akurtako@redhat.com> 0:4.5-5.3
 - Drop gcj_support.
 
